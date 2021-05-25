@@ -65,7 +65,15 @@
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <div class="col-lg-12 ml-auto">
-                        <p class="pre-wrap lead"> Although recent advances in voice conversion have shown significant improvement, there still remains a gap between the converted voice and target voice. A key factor that maintains this gap is the insufficient decomposition of content and voice style from the source speech. This insufficiency leads to the converted speech containing source speech style or losing source speech content. In this paper, we present VoiceMixer which can effectively decompose and transfer voice style through a novel information bottleneck and adversarial feedback. With self-supervised representation learning, the proposed information bottleneck can decompose the content and style with only a small loss of content information. Also, for adversarial feedback of each information, the discriminator is decomposed into content and style discriminator with self-supervision, then our model achieves better generalization to the voice style of the converted speech. The experimental results show the superiority of our model in disentanglement and transfer performance, and improve audio quality by preserving content information.</p>
+                      <p class="pre-wrap lead"> Although recent advances in voice conversion have shown significant improvement, there still remains a gap between the converted voice and target voice. A key factor that maintains this gap is the insufficient decomposition of content and voice style from the source speech. This insufficiency leads to the converted speech containing source speech style or losing source speech content. In this paper, we present VoiceMixer which can effectively decompose and transfer voice style through a novel information bottleneck and adversarial feedback. With self-supervised representation learning, the proposed information bottleneck can decompose the content and style with only a small loss of content information. Also, for adversarial feedback of each information, the discriminator is decomposed into content and style discriminator with self-supervision, then our model achieves better generalization to the voice style of the converted speech. The experimental results show the superiority of our model in disentanglement and transfer performance, and improve audio quality by preserving content information.</p>
+                        <p class="pre-wrap lead">&nbsp;</p>
+                        <p class="pre-wrap lead">&nbsp;</p>
+                        <p class="pre-wrap lead">We compare VoiceMixer with several VC models as follwed:</p>
+                        <p class="pre-wrap lead"> 1. StarGAN-VC: StarGAN-based voice conversion model <a href="http://www.kecl.ntt.co.jp/people/kameoka.hirokazu/Demos/stargan-vc/index.html">[Demo link]</a></p>
+                        <p class="pre-wrap lead"> 2. AGAIN-VC: Voice conversion model using Activation Guidance and Adaptive Instance Normalization <a href="https://kimythanly.github.io/AGAIN-VC-demo/index">[Demo link]</a></p>
+                        <p class="pre-wrap lead"> 3. AUTOVC: Auto-encoder based voice conversion model. We train AUTOVC in various settings with each having different sizes of information bottleneck and adversarial speaker classifier <a href="https://auspicious3000.github.io/autovc-demo/">[Demo link]</a></p>
+                        <p class="pre-wrap lead"> 4. Blow: Flow-based voice conversion model using hyper-conditioning <a href="https://blowconversions.github.io/">[Demo link]</a></p>
+                        <p class="pre-wrap lead"> 5. IDE-VC (Not implemented): Autoencoder-based voice conversion with information-theoretic disentanglement. There is no official source code for IDE-VC model. Please check the official demo page for comparision <a href="https://idevc.github.io/">[Demo link]</a></p>
                     </div>
                 </div>
             </div>
@@ -75,15 +83,8 @@
             <div class="container">
                 <!-- About Section Heading-->
                 <div class="text-center">
-                    <h2 class="page-section-heading d-inline-block text-white">MANY-TO-MANY VST</h2>
-                                        <p class="pre-wrap lead">We implement several VC models as follwed:</p>
-                                        <p class="pre-wrap lead">1. StarGAN-VC: StarGAN-based voice conversion model <a href="http://www.kecl.ntt.co.jp/people/kameoka.hirokazu/Demos/stargan-vc/index.html">[Demo link]</a></p>
-                                         <p class="pre-wrap lead">2. AGAIN-VC: Voice conversion model using Activation Guidance and Adaptive Instance Normalization <a href="https://kimythanly.github.io/AGAIN-VC-demo/index">[Demo link]</a></p>
-                                               <p class="pre-wrap lead">3. AUTOVC: Auto-encoder based voice conversion model. We train AUTOVC in various settings with each having different sizes of information bottleneck and adversarial speaker classifier.<a href="https://auspicious3000.github.io/autovc-demo/">[Demo link]</a></p>
-                                                                                 <p class="pre-wrap lead">4.Blow: Flow-based voice conversion model using hyper-conditioning.<a href="https://blowconversions.github.io/">[Demo link]</a></p>
-                                                                            <p class="pre-wrap lead"> 5.IDE-VC (Not implemented): Autoencoder-based voice conversion with information-theoretic disentanglement. There is no official source code for IDE-VC model. Please check the official demo page for comparision. <a href="https://idevc.github.io/">[Demo link]</a></p>
-                                  
-                  <p class="pre-wrap lead">All source and target speech are not seen during training</p>
+                  <h2 class="page-section-heading d-inline-block text-white">MANY-TO-MANY VST</h2>
+                                        <p class="pre-wrap lead">All source and target speech are not seen during training</p>
                 </div>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
