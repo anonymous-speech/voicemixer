@@ -7,7 +7,7 @@ This is repository for the official VoiceMixer.
 **Abstract :**
     Although recent advances in voice conversion have shown significant improvement, there still remains a gap between the converted voice and target voice. A key factor that maintains this gap is the insufficient decomposition of content and voice style from the source speech. This insufficiency leads to the converted speech containing source speech style or losing source speech content. In this paper, we present VoiceMixer which can effectively decompose and transfer voice style through a novel information bottleneck and adversarial feedback. With self-supervised representation learning, the proposed information bottleneck can decompose the content and style with only a small loss of content information. Also, for adversarial feedback of each information, the discriminator is decomposed into content and style discriminator with self-supervision, which enable our model to achieve better generalization to the voice style of the converted speech. The experimental results show the superiority of our model in disentanglement and transfer performance, and improve audio quality by preserving content information.
 
-## Neurips2021 Policy
+## Restricted Release
 To minimize the potential harms, malicious use, and ethical concerns of voice conversion technology, 
 the Neurips committee recommended the restricted release of model. 
 Hence, we will provide the source code only through restricted access. 
