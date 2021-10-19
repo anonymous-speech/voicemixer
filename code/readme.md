@@ -1,5 +1,5 @@
 # VoiceMixer: Adversarial Voice Style Mixup
-### anonymous Authors
+### Anonymous Authors
 
 This is repository for the official VoiceMixer.
 [Demo page](https://anonymous-speech.github.io/voicemixer/index.html) for audio samples.
@@ -11,11 +11,11 @@ This is repository for the official VoiceMixer.
 To minimize the potential harms, malicious use, and ethical concerns of voice conversion technology, 
 the Neurips committee recommended the restricted release of model. 
 Hence, we will provide the source code only through restricted access. 
-Please request the source code by submitting request form [[link]](). 
+Please request the source code by submitting this request form [[link]](). 
 Please read the terms of agreement carefully and fill in the form to use the source code. 
 You must agree to the terms. You may not use the source code if you do not accept the terms.
 
-Most of the terms is about the agreement not to use to deceive people.
+Most of the terms are about the agreement not to use to deceive people.
 
 
 ## References
