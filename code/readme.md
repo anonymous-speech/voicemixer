@@ -27,7 +27,22 @@ Your access to and use of the source code is conditioned on your acceptance of a
   
 We acknowledge the potential risks that can be caused from inappropriate use of this source code. Therefore, we will strictly monitor the users requesting access to the source code and will only allow access if “Code Usage” statement is appropriate. 
 
+## Update Notes*
 
+(2021-11-26) New demo page [Link] (will be updated soon)
+
+In the paper, we only evaluated the models trained with VCTK dataset which are monotonous speech dataset. Lately, we trained our model with very expressive speech dataset and we found that the model has some problems;
+1. There are some noise when converting the speech including laughter and dynamic expression.
+2. There are some speakers who are not able to transfer their voice style.
+
+We improved the synthesis quality by two modifications;
+1. We increased the number of decoder block from 3 to 6.
+2. We decrease the minimum squared sigma value from 1 to 0.1. 
+
+We need additional analysis for the minimum squared sigma value in Gaussian sampling. Previously, we used the minumum squared sigma value of 1. We only experimented this value of 1 in the upsampling process of Text-to-Speech task before. However, we found that the minimum squared sigma value of 0.1 is better during Gaussian downsampling. Because the short frames with laugher changed very dynamically, this lead to lower similarity between adjacent frames. Hence, the short duration sequences are listed. In this situation, the minumum squared sigma value of 1 may make the model downsample the content embedding from adjacent frames which are not similar.
+
+We are training the model with above setting and we will update the result soon in this page. Also, note that it is necessary to define the minimum squared sigma value. Without this, the model may not train in early step.   
+   
 ## References
 * We thank the author of [HiFi-GAN](https://github.com/jik876/hifi-gan) for their great repository and paper.
 * We refered the [Again-VC](https://github.com/KimythAnly/AGAIN-VC) for instance normalization.
