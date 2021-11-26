@@ -39,7 +39,7 @@ We improved the synthesis quality by two modifications;
 1. We increased the number of decoder block from 3 to 6.
 2. We decrease the minimum squared sigma value from 1 to 0.1. 
 
-We need additional analysis for the minimum squared sigma value in Gaussian sampling. Previously, we used the minumum squared sigma value of 1. We only experimented this value of 1 in the upsampling process of Text-to-Speech task before. However, we found that the minimum squared sigma value of 0.1 is better during Gaussian downsampling. Because the short frames with laugher changed very dynamically, this lead to lower similarity between adjacent frames. Hence, the short duration sequences are listed. In this situation, the minumum squared sigma value of 1 may make the model downsample the content embedding from adjacent frames which are not similar.
+We need additional analysis for the minimum squared sigma value in Gaussian sampling. Previously, we used the minumum squared sigma value of 1. We only experimented this value of 1 in the upsampling process of Text-to-Speech task before. However, we found that the minimum squared sigma value of 0.1 is better for Gaussian downsampling. Because the short frames with laugher changed very dynamically, this lead to lower similarity between adjacent frames. Hence, the short duration sequences are listed. In this situation, the minumum squared sigma value of 1 may make the model downsample the content embedding much more information from adjacent frames which are not similar.
 
 We are training the model with above setting and we will update the result soon in this page. Also, note that it is necessary to define the minimum squared sigma value. Without this, the model may not train in early step.   
    
